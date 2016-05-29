@@ -1,0 +1,149 @@
+/****************
+
+DRY
+
+*****************/
+.pop-up-header,
+.presentation-time {
+    background-color: #89559D;
+    color: #fff;
+}
+.register-now{
+	background-color: #57B87F; /*57B87F*/
+	color: #fff;
+}
+
+/****************
+
+navigation
+
+*****************/
+.navbar .navbar-brand {
+	color: rgba(255, 255, 255, .85);
+	font-size: 1rem;
+	padding-top: .45rem;
+}
+.nav-color {
+	background-color: #211F21;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0.85rem;
+}
+
+/****************
+
+jumbotron
+
+*****************/
+.jumbotron {
+	background: url('../img/bannerBG.png') ;
+	background-size: cover;
+}
+
+.display-2 {
+    font-size: 3.8rem;
+    font-weight: 300;
+}
+
+#countdown span {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+/****************
+
+countdown
+
+*****************/
+.countdown{
+	position: relative;
+	z-index: 1000;
+}
+.countdown-img{
+	z-index: -1000;
+}
+
+.countdown-list-container{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+}
+.countdown-list-container li{
+	width: 33.3333333%;
+	display: inline-block;
+	list-style-type: none;
+	color: #fff;
+	font-size: 1.1rem;
+	font-family: 'Helvetica Nue', Arial, sans-serif;
+	text-shadow:
+   		-1px -1px 0 #000,  
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+}
+
+
+/****************
+
+speakers
+
+*****************/
+.card{
+	min-height: 450px;
+}
+
+.card-img-top{
+	max-height: 180px;
+	margin: .5rem 1.25rem;
+	border-radius: 1rem;
+}
+.card-img-bg{
+	background: #8E8D98;
+	padding: .5rem 0;
+}
+/****************
+
+schedule
+
+*****************/
+.presentation-time{
+	border-radius: 1rem;
+}
+
+/****************
+
+modal 'pop-up'
+
+*****************/
+.modal-content{
+	overflow-x: hidden;
+}
+
+
+/****************
+
+media queries
+
+*****************/
+@media screen only and (min-width: 480px){
+	.display-2 {
+	    font-size: 5.5rem;
+	    font-weight: 300;
+	}	
+}
+
+@media screen only and (max-width: 358px){
+	.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+	    border-top-right-radius: .3rem;
+	    border-bottom-right-radius: .3rem;
+	}
+	.btn-group>.btn:last-child:not(:first-child){
+	    border-top-right-radius: .3rem;
+	    border-bottom-right-radius: .3rem;		
+	}
+}
+
